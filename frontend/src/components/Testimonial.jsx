@@ -1,15 +1,14 @@
 import React from "react";
 import t1 from "../assets/t1.png";
+import t2 from "../assets/t2.png";
+import t3 from "../assets/t3.png";
+import t4 from "../assets/t4.png";
 import { Link } from "react-router";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
 
 const Testimonial = () => {
-  const pagination = {
-    clickable: true,
-  };
   const autoplay = {
     delay: 5000,
     disableOnInteraction: false,
@@ -22,11 +21,9 @@ const Testimonial = () => {
       <Swiper
         slidesPerView={4.5}
         spaceBetween={25}
-        grabCursor={true}
-        navigation={true}
+        grabCursor={true} 
         autoplay={autoplay}
-        pagination={pagination}
-        modules={[Navigation, Autoplay, Pagination]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -39,7 +36,91 @@ const Testimonial = () => {
                   className="border-[3px] border-white rounded-full shadow-lg"
                 />
               </div>
-              <div className="p-2 text-center">
+              <div className="p-3 text-center">
+                <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
+                  Natalie Paisley
+                </h4>
+                <p className="text-base font-semibold capitalize text-[#003F6B]">
+                  Intern
+                </p>
+              </div>
+              <div className="flex justify-center pb-7">
+                <Link to="">
+                  <button className="w-full btn btn-blue font-medium bg-[#003F6B] capitalize text-white pt-4 pb-4 pl-5 pr-5 text-base rounded-md leading-none">
+                    view profile
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col bg-white rounded-lg p-6 testi_overlay relative z-[1]">
+            <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
+              <div className="rounded-md flex justify-center items-center -mt-[80px]">
+                <img
+                  src={t2}
+                  alt="logo"
+                  className="border-[3px] border-white rounded-full shadow-lg"
+                />
+              </div>
+              <div className="p-3 text-center">
+                <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
+                  Natalie Paisley
+                </h4>
+                <p className="text-base font-semibold capitalize text-[#003F6B]">
+                  Intern
+                </p>
+              </div>
+              <div className="flex justify-center pb-7">
+                <Link to="">
+                  <button className="w-full btn btn-blue font-medium bg-[#003F6B] capitalize text-white pt-4 pb-4 pl-5 pr-5 text-base rounded-md leading-none">
+                    view profile
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col bg-white rounded-lg p-6 testi_overlay relative z-[1]">
+            <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
+              <div className="rounded-md flex justify-center items-center -mt-[80px]">
+                <img
+                  src={t3}
+                  alt="logo"
+                  className="border-[3px] border-white rounded-full shadow-lg"
+                />
+              </div>
+              <div className="p-3 text-center">
+                <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
+                  Natalie Paisley
+                </h4>
+                <p className="text-base font-semibold capitalize text-[#003F6B]">
+                  Intern
+                </p>
+              </div>
+              <div className="flex justify-center pb-7">
+                <Link to="">
+                  <button className="w-full btn btn-blue font-medium bg-[#003F6B] capitalize text-white pt-4 pb-4 pl-5 pr-5 text-base rounded-md leading-none">
+                    view profile
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col bg-white rounded-lg p-6 testi_overlay relative z-[1]">
+            <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
+              <div className="rounded-md flex justify-center items-center -mt-[80px]">
+                <img
+                  src={t4}
+                  alt="logo"
+                  className="border-[3px] border-white rounded-full shadow-lg"
+                />
+              </div>
+              <div className="p-3 text-center">
                 <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
                   Natalie Paisley
                 </h4>
@@ -67,7 +148,7 @@ const Testimonial = () => {
                   className="border-[3px] border-white rounded-full shadow-lg"
                 />
               </div>
-              <div className="p-2 text-center">
+              <div className="p-3 text-center">
                 <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
                   Natalie Paisley
                 </h4>
@@ -90,12 +171,12 @@ const Testimonial = () => {
             <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
               <div className="rounded-md flex justify-center items-center -mt-[80px]">
                 <img
-                  src={t1}
+                  src={t2}
                   alt="logo"
                   className="border-[3px] border-white rounded-full shadow-lg"
                 />
               </div>
-              <div className="p-2 text-center">
+              <div className="p-3 text-center">
                 <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
                   Natalie Paisley
                 </h4>
@@ -118,96 +199,12 @@ const Testimonial = () => {
             <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
               <div className="rounded-md flex justify-center items-center -mt-[80px]">
                 <img
-                  src={t1}
+                  src={t3}
                   alt="logo"
                   className="border-[3px] border-white rounded-full shadow-lg"
                 />
               </div>
-              <div className="p-2 text-center">
-                <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
-                  Natalie Paisley
-                </h4>
-                <p className="text-base font-semibold capitalize text-[#003F6B]">
-                  Intern
-                </p>
-              </div>
-              <div className="flex justify-center pb-7">
-                <Link to="">
-                  <button className="w-full btn btn-blue font-medium bg-[#003F6B] capitalize text-white pt-4 pb-4 pl-5 pr-5 text-base rounded-md leading-none">
-                    view profile
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col bg-white rounded-lg p-6 testi_overlay relative z-[1]">
-            <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
-              <div className="rounded-md flex justify-center items-center -mt-[80px]">
-                <img
-                  src={t1}
-                  alt="logo"
-                  className="border-[3px] border-white rounded-full shadow-lg"
-                />
-              </div>
-              <div className="p-2 text-center">
-                <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
-                  Natalie Paisley
-                </h4>
-                <p className="text-base font-semibold capitalize text-[#003F6B]">
-                  Intern
-                </p>
-              </div>
-              <div className="flex justify-center pb-7">
-                <Link to="">
-                  <button className="w-full btn btn-blue font-medium bg-[#003F6B] capitalize text-white pt-4 pb-4 pl-5 pr-5 text-base rounded-md leading-none">
-                    view profile
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col bg-white rounded-lg p-6 testi_overlay relative z-[1]">
-            <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
-              <div className="rounded-md flex justify-center items-center -mt-[80px]">
-                <img
-                  src={t1}
-                  alt="logo"
-                  className="border-[3px] border-white rounded-full shadow-lg"
-                />
-              </div>
-              <div className="p-2 text-center">
-                <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
-                  Natalie Paisley
-                </h4>
-                <p className="text-base font-semibold capitalize text-[#003F6B]">
-                  Intern
-                </p>
-              </div>
-              <div className="flex justify-center pb-7">
-                <Link to="">
-                  <button className="w-full btn btn-blue font-medium bg-[#003F6B] capitalize text-white pt-4 pb-4 pl-5 pr-5 text-base rounded-md leading-none">
-                    view profile
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col bg-white rounded-lg p-6 testi_overlay relative z-[1]">
-            <div className="shadow-sm border border-slate-200 bg-white rounded-lg mt-20">
-              <div className="rounded-md flex justify-center items-center -mt-[80px]">
-                <img
-                  src={t1}
-                  alt="logo"
-                  className="border-[3px] border-white rounded-full shadow-lg"
-                />
-              </div>
-              <div className="p-2 text-center">
+              <div className="p-3 text-center">
                 <h4 className="mb-1 text-xl font-semibold text-[#003F6B]">
                   Natalie Paisley
                 </h4>

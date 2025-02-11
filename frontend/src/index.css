@@ -68,7 +68,7 @@ button:focus-visible {
 
 button {
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.3s linear;
 }
 
 .card_section h5,
@@ -96,10 +96,12 @@ button {
   opacity: 1;
   visibility: visible;
 }
-.project_btn button:hover{
+button:hover{
   background-color: #0D99FF;
 }
-
+.bg_custom{
+  background: rgba(0,0,0,0.4);
+}
 .testi_overlay::before {
   content: '';
   position: absolute;
@@ -111,165 +113,4 @@ button {
 }
 
 
-.testimonial_section .swiper .swiper-button-next:before,
-.testimonial_section .swiper .swiper-button-prev:before {
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: white;
-}
-.swiper{
-  padding-bottom: 80px !important;
-}
-.testimonial_section .swiper .swiper-button-next:before {
-    content: 'next';
-}
-
-.testimonial_section .swiper .swiper-button-prev:before {
-    content: 'prev';
-}
-
-.testimonial_section .swiper .swiper-button-next {
-    right: 550px;
-    bottom: 0;
-    margin: 0;
-    top: auto;
-    padding: 30px 0px 30px 25px;
-    width: 140px;
-    border-radius: 40px;
-    background: #003F6B;
-}
-
-.testimonial_section .swiper .swiper-button-prev {
-    left: 550px;
-    bottom: 0;
-    margin: 0;
-    top: auto;
-    flex-direction: row-reverse;
-    padding: 30px 25px 30px 0;
-    width: 140px;
-    border-radius: 40px;
-    background: #003F6B;
-}
-
-.testimonial_section .swiper .swiper-button-prev:after {
-    background-image: url('./assets/prev.png');
-    background-size: cover;
-    background-position: center;
-    font-size: 0;
-    width: 45px;
-    height: 45px;
-    font-size: 0;
-    margin-right: 10px;
-    transition: all 0.3s linear;
-}
-
-.testimonial_section .swiper .swiper-button-next:after {
-    background-image: url('./assets/next.png');
-    background-size: cover;
-    background-position: center;
-    font-size: 0;
-    width: 45px;
-    height: 45px;
-    font-size: 0;
-    margin-left: 10px;
-    transition: all 0.3s linear;
-}
-.testimonial_section .swiper .swiper-button-prev:hover:after{
-    background-image: url('./assets/prevhover.png');
-}
-.testimonial_section .swiper .swiper-button-next:hover:after{
-    background-image: url('./assets/nexthover.png');
-}
-.testimonial_section .swiper .swiper-button-next.swiper-button-disabled::after {
-    transform: rotate(180deg);
-}
-.testimonial_section .swiper .swiper-button-prev.swiper-button-disabled::after {
-    transform: rotate(-180deg);
-}
-
-
-.testimonial_section .swiper-horizontal>.swiper-pagination-bullets {
-  bottom: 20px;
-  z-index: -1;
-}
-
-.testimonial_section .swiper .swiper-pagination-clickable .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #003F6B;
-  border: 1px solid transparent;
-}
-
-.testimonial_section .swiper .swiper-pagination-clickable .swiper-pagination-bullet {
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  background: transparent;
-  border: 1px solid #515151;
-  transition: all 0.3s linear;
-}
-
-
-@media screen and (max-width: 1340px) {
-  .testimonial_section .swiper-horizontal>.swiper-pagination-bullets{
-      bottom: 15px;
-  }
-  
-  .blog-sec .swiper {
-      padding-bottom: 110px;
-  }
-  .testimonial_section .swiper .swiper-button-next {
-      right: 0;
-      top: auto;
-      bottom: 0;
-  }
-
-  .testimonial_section .swiper .swiper-button-prev {
-      left: 0;
-      top: auto;
-      bottom: 0;
-  }
-
-  .testimonial_section .swiper .swiper-button-prev::before,
-  .testimonial_section .swiper .swiper-button-next::before {
-      display: none;
-  }
-
-  .testimonial_section .swiper .swiper-button-next,
-  .testimonial_section .swiper .swiper-button-prev {
-      padding: 0;
-      width: 55px;
-      height: 55px;
-  }
-
-  .testimonial_section .swiper .swiper-button-prev:after,
-  .testimonial_section .swiper .swiper-button-next:after {
-      margin: 0;
-  }
-
-
-}
-
-@media screen and (min-width: 1341px) and (max-width: 1540px) {
-  .testimonial_section .swiper .swiper-button-next {
-      right: 450px;
-  }
-
-  .testimonial_section .swiper .swiper-button-prev {
-      left: 450px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .blog-sec .swiper {
-      padding-bottom: 75px;
-  }
-}
-
-@media screen and (max-width: 989px) {
-
-  .testimonial_section .swiper-horizontal>.swiper-pagination-bullets {
-      bottom: 15px;
-  }
-
-}
 

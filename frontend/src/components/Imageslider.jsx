@@ -171,7 +171,7 @@ const Imageslider = () => {
           </div>
         </Marquee>
         <div className="view_btn mt-8">
-          <Link to="" className="capitalize text-[#0D99FF] font-bold text-xl">
+          <Link to="/list" className="capitalize text-[#003F6B] font-bold text-xl">
             View all
           </Link>
         </div>

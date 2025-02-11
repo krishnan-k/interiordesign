@@ -22,9 +22,11 @@ const Navbar = () => {
         </div>
         <div className="login_details flex items-center justify-between gap-5">
           <div className="post_btn">
-            <button className="btn btn-blue font-bold bg-gray-100 pt-4 pb-4 pl-7 pr-7 text-xl rounded-xl leading-none">
-              Post a Project
-            </button>
+            <Link to="/post">
+              <button className="btn btn-blue font-bold bg-gray-100 pt-4 pb-4 pl-7 pr-7 text-xl rounded-xl leading-none">
+                Post a Project
+              </button>
+            </Link>
           </div>
           <div className="cart_btn">
             <img src={cart} alt="logo" />
