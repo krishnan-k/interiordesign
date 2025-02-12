@@ -14,7 +14,7 @@ const Grid = () => {
             live project
           </h3>
 
-          <div className="search_input flex items-center justify-between gap-5">
+          {/* <div className="search_input flex items-center justify-between gap-5">
             <input
               className="border-[2px] pt-4 pb-4 pl-8 pr-40 rounded-xl text-left border-gray-200 font-medium"
               type="text"
@@ -30,7 +30,7 @@ const Grid = () => {
               />
               <IoFilter className="text-2xl absolute top-5 right-5" />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <Marquee speed={100} pauseOnHover={true}>
