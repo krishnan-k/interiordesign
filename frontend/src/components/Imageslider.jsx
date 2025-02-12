@@ -8,7 +8,7 @@ import { Link } from "react-router";
 
 const Imageslider = () => {
   return (
-    <div className="max-w-[1600px] m-auto font-script pt-6 pb-0 md_screen">
+    <div id="aboutus" className="max-w-[1600px] m-auto font-script pt-6 pb-0 md_screen">
       <div className="slider_inner_section">
         <div className="slider_search flex items-center justify-between md_screen flex-wrap">
           <h3 className="font-bold text-left text-2xl text-[#003F6B] uppercase">
@@ -18,7 +18,7 @@ const Imageslider = () => {
           <div className="search_input flex items-center justify-between gap-5">
             <form>
               <input
-                className="border-[2px] pt-4 pb-4 pl-8 pr-40 rounded-xl text-left border-gray-200 font-medium"
+                className="border-[2px] pt-4 pb-4 pl-8 pr-40 rounded-xl text-left border-gray-200 font-medium focus:outline-sky-500"
                 type="text"
                 placeholder="Search Your Live Project"
                 name="project"
@@ -26,7 +26,7 @@ const Imageslider = () => {
             </form>
             <div className="search_location relative">
               <input
-                className="border-[2px] pt-4 pb-4 pl-8 pr-40 rounded-xl text-left border-gray-200 font-medium"
+                className="border-[2px] pt-4 pb-4 pl-8 pr-40 rounded-xl text-left border-gray-200 font-medium focus:outline-sky-500"
                 type="text"
                 placeholder="Search for your location.."
                 name="location"
@@ -36,7 +36,7 @@ const Imageslider = () => {
           </div>
         </div>
 
-        <Marquee speed={100}>
+        <Marquee speed={100} pauseOnHover={true}>
           <div className="marquee_section flex pt-6">
             <div className="bg-white border-[1px] border-gray-200 rounded-3xl relative mr-6">
               <div className="inner_location">

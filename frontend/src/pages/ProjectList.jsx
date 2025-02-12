@@ -12,13 +12,13 @@ const ProjectList = () => {
         style={{ "--image_url": `url(${bgl})` }}
         className="bg_image_section bg-[image:var(--image_url)] bg-no-repeat bg-center bg-cover m-auto font-script h-75 flex items-end justify-center mb-4"
       >
-        <p className="text-center text-3xl text-white bg_custom w-full pt-8 pb-8">
+        <p className="text-center text-3xl text-white bg_custom w-full pt-8 pb-8 md_screen">
           Project initiation - The beginning of the project that includes the
           hiring of construction <br></br> and design teams, defining the scope
           of the work, creating a budget.....
         </p>
       </div>
-      <div className="max-w-[1400px] m-auto font-script pt-6 pb-6">
+      <div className="max-w-[1400px] m-auto font-script pt-6 pb-6 md_screen">
         <div className="project_list_section">
           <h3 className="font-bold text-left text-2xl text-[#003F6B] capitalize">
             Project list
@@ -26,12 +26,12 @@ const ProjectList = () => {
 
           <div className="search_section">
             <div className="project_location mt-3 flex justify-between">
-              <div className="relative">
+              <div className="relative w-2xl outline-1 -outline-offset-1 outline-gray-300 bg-gray-100 rounded-lg">
                 <input
                   name="email"
                   type="text"
                   placeholder="Search any"
-                  className="bg-gray-100 block w-2xl px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                  className="block px-3.5 py-3.5 text-base font-medium text-[#003F6B] placeholder:text-gray-400"
                 />
                 <IoSearch className="absolute right-3 top-4 text-2xl text-gray-400 font-semibold" />
               </div>
@@ -46,7 +46,7 @@ const ProjectList = () => {
               </div>
             </div>
           </div>
-          <div class="flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
+          <div class="flex-direction-cm flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
             <img src={l1} alt="list-image" />
             <div class="p-4 leading-normal w-full relative">
               <div className="interns absolute right-0 -inset-y-3">
@@ -142,7 +142,7 @@ const ProjectList = () => {
               </div>
             </div>
           </div>
-          <div class="flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
+          <div class="flex-direction-cm  flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
             <img src={l1} alt="list-image" />
             <div class="p-4 leading-normal w-full relative">
               <div className="interns absolute right-0 -inset-y-3">
@@ -238,7 +238,7 @@ const ProjectList = () => {
               </div>
             </div>
           </div>
-          <div class="flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
+          <div class="flex-direction-cm  flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
             <img src={l1} alt="list-image" />
             <div class="p-4 leading-normal w-full relative">
               <div className="interns absolute right-0 -inset-y-3">
@@ -334,7 +334,7 @@ const ProjectList = () => {
               </div>
             </div>
           </div>
-          <div class="flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
+          <div class="flex-direction-cm  flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
             <img src={l1} alt="list-image" />
             <div class="p-4 leading-normal w-full relative">
               <div className="interns absolute right-0 -inset-y-3">
@@ -430,7 +430,7 @@ const ProjectList = () => {
               </div>
             </div>
           </div>
-          <div class="flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
+          <div class="flex-direction-cm  flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
             <img src={l1} alt="list-image" />
             <div class="p-4 leading-normal w-full relative">
               <div className="interns absolute right-0 -inset-y-3">
@@ -526,7 +526,7 @@ const ProjectList = () => {
               </div>
             </div>
           </div>
-          <div class="flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
+          <div class="flex-direction-cm  flex items-center border-gray-300 border-[2px] hover:bg-gray-100 bg-[#F5F5F5] gap-1.5 mt-6">
             <img src={l1} alt="list-image" />
             <div class="p-4 leading-normal w-full relative">
               <div className="interns absolute right-0 -inset-y-3">

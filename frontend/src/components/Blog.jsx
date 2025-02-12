@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const Blog = () => {
   return (
-    <div className="max-w-[1600px] m-auto font-script pt-6 pb-6 md_screen">
+    <div id="blog" className="max-w-[1600px] m-auto font-script pt-6 pb-6 md_screen">
       <h3 className="font-bold text-left mb-5 text-2xl text-[#003F6B] uppercase">
         blog
       </h3>

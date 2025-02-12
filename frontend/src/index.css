@@ -6,7 +6,9 @@
   --font-script: "Montserrat", serif;
   --font-custom: "Inria Sans", serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* 
 :root {
   font-family: "Montserrat", serif;
@@ -65,7 +67,26 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
+button.scroll-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: #003F6B;
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  margin: 0;
+  top: unset;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
 button {
   cursor: pointer;
   transition: all 0.3s linear;
@@ -100,7 +121,21 @@ button {
 button:hover {
   background-color: #0D99FF;
 }
-
+button:hover {
+  color: white;
+}
+nav ul li.active a{
+  color: #0D99FF;
+}
+.view_btn a,
+nav ul li a,
+.login_btn h3{
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.view_btn a:hover, nav ul li a:hover, .login_btn h3:hover{
+  color: #0D99FF;
+}
 .bg_custom {
   background: rgba(0, 0, 0, 0.4);
 }
@@ -157,14 +192,77 @@ button.drawer-close {
     display: none;
   }
 
+  .flex-direction-cm {
+    flex-direction: column;
+  }
+
+  .project_list_section .inner_content .pr-17 {
+    padding-right: 10px;
+    border: none;
+  }
+
+  .project_list_section .inner_content {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .interns {
+    top: -5px;
+  }
+
+  .project_status {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .budget_btn button {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
   .search_input form input, .search_location input {
     padding-right: 80px;
   }
+}
+
+.navigaion-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 
+@media screen and (min-width: 1341px) {
+  .navigaion-fixed {
+    animation: slideDown 0.35s ease-out;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .smd_none {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 1340px) {
+  .header_section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
   h2.font-custom {
     font-size: clamp(3rem, -0.1905rem + 3.8095vw, 3rem);
   }
@@ -176,10 +274,6 @@ button.drawer-close {
   .smd_none button {
     color: #003F6B;
     width: 100%;
-  }
-
-  .smd_none {
-    padding: 0 20px;
   }
 
   .login_btn.md_none {
@@ -194,7 +288,7 @@ button.drawer-close {
     width: 100%;
   }
 
-  .login_btn.md_none h3 {
+  .login_btn.md_none a {
     color: #003F6B;
     text-align: center;
     padding: 10px;
@@ -322,20 +416,34 @@ button.drawer-close {
 }
 
 @media screen and (max-width: 767px) {
-  .mt-12.md_screen{
+  .bg_image_section p {
+    font-size: 18px;
+  }
+
+  .project_location {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .mt-12.md_screen {
     margin-top: 10px;
   }
-  .budget_btn{
+
+  .budget_btn {
     flex-wrap: wrap;
     gap: 5px;
   }
-  .post_content{
+
+  .post_content {
     flex-direction: column;
   }
-  .image_section{
+
+  .image_section {
     position: relative;
     top: unset;
   }
+
   .slider_image button {
     padding: 15px 20px;
     font-size: 20px;

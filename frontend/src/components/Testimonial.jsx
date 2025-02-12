@@ -14,13 +14,12 @@ const Testimonial = () => {
     disableOnInteraction: false,
   };
   return (
-    <div className="max-w-[1600px] m-auto font-script pt-6 pb-0 testimonial_section md_screen">
+    <div id="process" className="max-w-[1600px] m-auto font-script pt-6 pb-0 testimonial_section md_screen">
       <h3 className="font-bold text-left mb-5 text-2xl text-[#003F6B] uppercase">
         available intern
       </h3>
       <Swiper
         slidesPerView={4.5}
-        spaceBetween={25}
         grabCursor={true}
         autoplay={autoplay}
         breakpoints={{
@@ -30,19 +29,19 @@ const Testimonial = () => {
           },
           480: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 25,
           },
           767: {
             slidesPerView: 3.1,
-            spaceBetween: 40,
+            spaceBetween: 25,
           },
           1024: {
             slidesPerView: 3.5,
-            spaceBetween: 50,
+            spaceBetween: 25,
           },
           1200: {
             slidesPerView: 4.5,
-            spaceBetween: 50,
+            spaceBetween: 25,
           },
         }}
         modules={[Autoplay]}

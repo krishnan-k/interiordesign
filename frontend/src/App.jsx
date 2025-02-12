@@ -6,6 +6,9 @@ import Post from "./pages/Post";
 import ProjectList from "./pages/ProjectList";
 import Footer from "./components/Footer";
 import Grid from "./pages/Grid";
+import ScrollTop from "./components/ScrollTop";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
           <Route path="/post" element={<Post />} />
           <Route path="/list" element={<ProjectList />} />
           <Route path="/grid" element={<Grid />} />
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Register/>}/>
         </Routes>
+        <ScrollTop/>
         <Footer />
       </BrowserRouter>
     </>

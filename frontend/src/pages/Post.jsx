@@ -40,7 +40,7 @@ const Post = () => {
               >
                 Category <span className="text-red-500">*</span>
               </label>
-              <select class="block w-full bg-white px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400">
+              <select class="block w-full bg-white px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500">
                 <option selected>Select Options</option>
                 <option value="Options-1">Options 1</option>
                 <option value="Options-2">Options 2</option>
@@ -60,7 +60,7 @@ const Post = () => {
               </label>
               <select
                 id="countries"
-                class="block w-full bg-white px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                class="block w-full bg-white px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
               >
                 <option selected>Select Options</option>
                 <option value="Options-1">Options 1</option>
@@ -83,7 +83,7 @@ const Post = () => {
                 name="email"
                 type="text"
                 placeholder="Type your project title"
-                className="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                className="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
               />
             </div>
           </div>
@@ -98,7 +98,7 @@ const Post = () => {
               <textarea
                 name="desc"
                 rows={5}
-                className=" bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                className="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                 defaultValue={""}
               />
             </div>
@@ -178,7 +178,7 @@ const Post = () => {
                   name="email"
                   type="text"
                   placeholder="Search for your location"
-                  className="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                  className="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                 />
                 <IoSearch className="absolute right-3 top-4 text-2xl text-gray-400 font-semibold" />
               </div>
@@ -197,37 +197,37 @@ const Post = () => {
                     name="email"
                     type="text"
                     placeholder="-"
-                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                   />
                   <input
                     name="email"
                     type="text"
                     placeholder="-"
-                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                   />
                   <input
                     name="email"
                     type="text"
                     placeholder="-"
-                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                   />
                   <input
                     name="email"
                     type="text"
                     placeholder="-"
-                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                   />
                   <input
                     name="email"
                     type="text"
                     placeholder="-"
-                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                   />
                   <input
                     name="email"
                     type="text"
                     placeholder="-"
-                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    className="w-full text-center block px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                   />
                 </div>
               </form>
@@ -249,7 +249,7 @@ const Post = () => {
                     datepicker
                     id="default-datepicker"
                     type="text"
-                    class="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    class="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                     placeholder="Select date"
                   />
                   <div class="absolute top-10.5 end-5 flex items-center ps-3.5 pointer-events-none">
@@ -275,7 +275,7 @@ const Post = () => {
                     datepicker
                     id="default-datepicker"
                     type="text"
-                    class="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                    class="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                     placeholder="Select date"
                   />
                   <div class="absolute top-10.5 end-5 flex items-center ps-3.5 pointer-events-none">
@@ -299,7 +299,7 @@ const Post = () => {
                       name="email"
                       type="text"
                       placeholder="Days"
-                      className="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400"
+                      className="bg-gray-100 block w-full px-3.5 py-3.5 rounded-lg text-base font-medium text-[#003F6B] outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-sky-500"
                     />
                   </div>
                 </div>

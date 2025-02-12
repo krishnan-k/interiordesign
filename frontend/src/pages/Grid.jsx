@@ -33,7 +33,7 @@ const Grid = () => {
           </div>
         </div>
 
-        <Marquee speed={100}>
+        <Marquee speed={100} pauseOnHover={true}>
           <div className="marquee_section flex pt-6">
             <div className="bg-white border-[1px] border-gray-200 rounded-3xl relative mr-6">
               <div className="inner_location">
@@ -169,7 +169,7 @@ const Grid = () => {
             </div>
           </div>
         </Marquee>
-        <Marquee direction={"right"}  speed={100}>
+        <Marquee direction={"right"}  speed={100} pauseOnHover={true}>
           <div className="marquee_section flex pt-6 mt-6 pt-6">
             <div className="bg-white border-[1px] border-gray-200 rounded-3xl relative mr-6">
               <div className="inner_location">
