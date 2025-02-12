@@ -6,9 +6,11 @@
   --font-script: "Montserrat", serif;
   --font-custom: "Inria Sans", serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /* 
 :root {
   font-family: "Montserrat", serif;
@@ -67,6 +69,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+.box_sw {
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 25px 20px -20px;
+}
+
 button.scroll-to-top {
   display: flex;
   align-items: center;
@@ -87,6 +93,7 @@ button.scroll-to-top {
   height: 50px;
   padding: 0;
 }
+
 button {
   cursor: pointer;
   transition: all 0.3s linear;
@@ -121,21 +128,26 @@ button {
 button:hover {
   background-color: #0D99FF;
 }
+
 button:hover {
   color: white;
 }
-nav ul li.active a{
+
+nav ul li.active a {
   color: #0D99FF;
 }
+
 .view_btn a,
 nav ul li a,
-.login_btn h3{
+.login_btn h3 {
   transition: all 0.3s linear;
   cursor: pointer;
 }
-.view_btn a:hover, nav ul li a:hover, .login_btn h3:hover{
+
+.view_btn a:hover, nav ul li a:hover, .login_btn h3:hover {
   color: #0D99FF;
 }
+
 .bg_custom {
   background: rgba(0, 0, 0, 0.4);
 }

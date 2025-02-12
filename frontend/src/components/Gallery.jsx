@@ -21,7 +21,7 @@ const Gallery = () => {
   return (
     <div
       id="service"
-      className="max-w-[1600px] m-auto font-script pt-6 pb-0 md_screen"
+      className="max-w-[1600px] m-auto font-script pt-8 pb-0 md_screen"
     >
       <div className="slider_inner_section">
         <div className="slider_search flex items-center justify-between">
