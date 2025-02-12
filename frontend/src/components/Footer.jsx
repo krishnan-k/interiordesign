@@ -8,9 +8,9 @@ import { FaGoogle } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#003F6B]">
-      <div className="max-w-[1600px] m-auto font-script pt-5 pb-4 mt-12">
-        <div className="flex items-center justify-between gap-5">
-          <div className="link_section flex items-center justify-between gap-5">
+      <div className="max-w-[1600px] m-auto font-script pt-5 pb-4 mt-12 md_screen footer md_screen">
+        <div className="flex items-center justify-between gap-5 flex-wrap">
+          <div className="link_section flex items-center justify-between gap-10 flex-wrap">
             <p className="text-white font-medium">
               <Link to="">Privacy policy</Link>
             </p>

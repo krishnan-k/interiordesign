@@ -4,8 +4,8 @@ import { IoSearch } from "react-icons/io5";
 
 const Post = () => {
   return (
-    <div className="max-w-[1600px] m-auto font-script pt-6 pb-6">
-      <div className="post_content flex justify-between">
+    <div className="max-w-[1600px] m-auto font-script pt-6 pb-6 mt-12 md_screen">
+      <div className="post_content flex justify-between gap-4">
         <div className="image_section rounded-xl overflow-hidden mx-auto w-full max-w-2xl sticky size-fit top-0">
           <img src={p1} alt="rect" className="w-full" />
         </div>
@@ -116,7 +116,7 @@ const Post = () => {
                 for="dropzone-file"
                 class="flex flex-col items-center justify-center w-full h-25 border-2 border-gray-100 border-dashed rounded-lg cursor-pointer bg-[#DBE7F1] dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-200"
               >
-                <div className="flex items-center justify-center pt-5 pb-6 gap-4">
+                <div className="flex items-center justify-center pt-5 pb-6 pl-3 pr-3 gap-4">
                   <svg
                     className="w-8 h-8 text-gray-500 dark:text-gray-400"
                     aria-hidden="true"
@@ -237,7 +237,7 @@ const Post = () => {
               <p className="block mb-1 text-md text-left font-medium text-[#003F6B] capitalize mb-2">
                 project duration days<span className="text-red-500">*</span>
               </p>
-              <div className="select_date flex gap-5">
+              <div className="select_date flex gap-5 flex-wrap">
                 <div class="relative w-full">
                   <label
                     htmlFor="title"

@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const Blog = () => {
   return (
-    <div className="max-w-[1600px] m-auto font-script pt-6 pb-6">
+    <div className="max-w-[1600px] m-auto font-script pt-6 pb-6 md_screen">
       <h3 className="font-bold text-left mb-5 text-2xl text-[#003F6B] uppercase">
         blog
       </h3>
@@ -15,6 +15,28 @@ const Blog = () => {
         spaceBetween={25}
         grabCursor={true}
         loop={true}
+        breakpoints={{
+          350: {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 1.2,
+            spaceBetween: 40,
+          },
+          767: {
+            slidesPerView: 2.5,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          1200: {
+            slidesPerView: 4.5,
+            spaceBetween: 50,
+          },
+        }}
         className="mySwiper"
       >
         <SwiperSlide>

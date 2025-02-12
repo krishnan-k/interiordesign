@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const Project = () => {
   return (
-    <div className="max-w-[1600px] m-auto font-script pt-6 pb-6">
+    <div className="max-w-[1600px] m-auto font-script pt-6 pb-0 md_screen">
       <h3 className="font-bold text-left mb-5 text-2xl text-[#003F6B] uppercase">
         projects
       </h3>
@@ -18,6 +18,28 @@ const Project = () => {
         spaceBetween={25}
         grabCursor={true}
         loop={true}
+        breakpoints={{
+          350: {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 1.2,
+            spaceBetween: 40,
+          },
+          767: {
+            slidesPerView: 2.5,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1200: {
+            slidesPerView: 3.8,
+            spaceBetween: 50,
+          },
+        }}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -38,7 +60,7 @@ const Project = () => {
                   the scope of the work, creating a budget.....
                 </p>
               </div>
-              <div className="flex items-center justify-between mt-4 pl-3">
+              <div className="flex items-center justify-between mt-4 pl-3 flex-wrap gap-3 text-left">
                 <span className="text-xl font-bold text-[#003F6B]">
                   Budget : £ 100
                 </span>
@@ -67,7 +89,7 @@ const Project = () => {
                   the scope of the work, creating a budget.....
                 </p>
               </div>
-              <div className="flex items-center justify-between mt-4 pl-3">
+              <div className="flex items-center justify-between mt-4 pl-3 flex-wrap gap-3 text-left">
                 <span className="text-xl font-bold text-[#003F6B]">
                   Budget : £ 100
                 </span>
@@ -96,7 +118,7 @@ const Project = () => {
                   the scope of the work, creating a budget.....
                 </p>
               </div>
-              <div className="flex items-center justify-between mt-4 pl-3">
+              <div className="flex items-center justify-between mt-4 pl-3 flex-wrap gap-3 text-left">
                 <span className="text-xl font-bold text-[#003F6B]">
                   Budget : £ 100
                 </span>
@@ -125,7 +147,7 @@ const Project = () => {
                   the scope of the work, creating a budget.....
                 </p>
               </div>
-              <div className="flex items-center justify-between mt-4 pl-3">
+              <div className="flex items-center justify-between mt-4 pl-3 flex-wrap gap-3 text-left">
                 <span className="text-xl font-bold text-[#003F6B]">
                   Budget : £ 100
                 </span>
@@ -154,7 +176,7 @@ const Project = () => {
                   the scope of the work, creating a budget.....
                 </p>
               </div>
-              <div className="flex items-center justify-between mt-4 pl-3">
+              <div className="flex items-center justify-between mt-4 pl-3 flex-wrap gap-3 text-left">
                 <span className="text-xl font-bold text-[#003F6B]">
                   Budget : £ 100
                 </span>

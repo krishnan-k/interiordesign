@@ -2,7 +2,7 @@ import React from "react";
 import c1 from "../assets/c1.png";
 const Contact = () => {
   return (
-    <div className="max-w-[1600px] m-auto font-script pt-0 pb-6">
+    <div className="max-w-[1600px] m-auto font-script pt-0 pb-6 md_screen">
       <h3 className="font-bold text-left mb-5 text-2xl text-[#003F6B] uppercase">
         enquiry now 
       </h3>
@@ -28,7 +28,7 @@ const Contact = () => {
                     autoComplete="given-name"
                     required
                     placeholder="Enter your name"
-                    className="block w-full bg-white px-3.5 py-2.5 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
+                    className="block w-full bg-white px-3.5 py-3 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
                   />
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Contact = () => {
                     type="text"
                     autoComplete="family-name"
                     placeholder="Phone number"
-                    className="block w-full bg-white px-3.5 py-2.5 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
+                    className="block w-full bg-white px-3.5 py-3 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
                   />
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                     type="email"
                     autoComplete="email"
                     placeholder="Enter your phone number"
-                    className="block w-full bg-white px-3.5 py-2.5 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
+                    className="block w-full bg-white px-3.5 py-3 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
                   />
                 </div>
               </div>
@@ -83,7 +83,7 @@ const Contact = () => {
                     type="email"
                     autoComplete="email"
                     placeholder="Enter your email"
-                    className="block w-full bg-white px-3.5 py-2.5 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
+                    className="block w-full bg-white px-3.5 py-3 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
                   />
                 </div>
               </div>
@@ -102,7 +102,7 @@ const Contact = () => {
                     type="text"
                     autoComplete="organization"
                     placeholder="Enter your site location"
-                    className="block w-full bg-white px-3.5 py-2.5 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
+                    className="block w-full bg-white px-3.5 py-3 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
                   />
                 </div>
               </div>
@@ -118,7 +118,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className="block w-full bg-white px-3.5 py-2.5 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
+                    className="block w-full bg-white px-3.5 py-3 text-sm text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 italic"
                     defaultValue={""}
                   />
                 </div>
@@ -127,7 +127,7 @@ const Contact = () => {
             <div className="mt-10">
               <button
                 type="submit"
-                className="block w-full bg-[#003F6B] px-3.5 py-2.5 text-center text-xl font-semibold text-white italic"
+                className="block w-full bg-[#003F6B] px-3.5 py-3 text-center text-xl font-semibold text-white italic"
               >
                 Get a Quates
               </button>
