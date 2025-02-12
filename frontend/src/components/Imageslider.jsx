@@ -1,6 +1,9 @@
 import React from "react";
 import { IoFilter } from "react-icons/io5";
 import one from "../assets/1.png";
+import two from "../assets/2.png";
+import three from "../assets/3.png";
+import four from "../assets/4.png";
 import circle from "../assets/circle.png";
 import { FaLocationDot } from "react-icons/fa6";
 import Marquee from "react-fast-marquee";
@@ -74,7 +77,51 @@ const Imageslider = () => {
                     <img src={circle} alt="circle" className="rounded-3xl" />
                   </div>
                 </div>
-                <img src={one} alt="image" className="rounded-3xl" />
+                <img src={two} alt="image" className="rounded-3xl" />
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full text-right pt-3 pb-3 pr-5 bg-[#F5F5F5] rounded-b-3xl">
+                  <p className="font-normal text-[#0D99FF] font-medium">
+                    Progress
+                  </p>
+                  <a href="#">
+                    <h5 className="font-extrabold text-2xl text-[#003F6B]">
+                      Interior Works
+                    </h5>
+                  </a>
+                </div>
+              </div>
+              <div className="bg-white border-[1px] border-gray-200 rounded-3xl relative mr-6">
+                <div className="inner_location">
+                  <div className="location absolute flex items-center justify-between w-full pl-4 pr-4 top-4">
+                    <p className="flex items-center justify-center gap-2 text-[#003F6B] font-medium">
+                      {" "}
+                      <FaLocationDot className="text-2xl" /> England
+                    </p>
+                    <img src={circle} alt="circle" className="rounded-3xl" />
+                  </div>
+                </div>
+                <img src={three} alt="image" className="rounded-3xl" />
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full text-right pt-3 pb-3 pr-5 bg-[#F5F5F5] rounded-b-3xl">
+                  <p className="font-normal text-[#0D99FF] font-medium">
+                    Progress
+                  </p>
+                  <a href="#">
+                    <h5 className="font-extrabold text-2xl text-[#003F6B]">
+                      Interior Works
+                    </h5>
+                  </a>
+                </div>
+              </div>
+              <div className="bg-white border-[1px] border-gray-200 rounded-3xl relative mr-6">
+                <div className="inner_location">
+                  <div className="location absolute flex items-center justify-between w-full pl-4 pr-4 top-4">
+                    <p className="flex items-center justify-center gap-2 text-[#003F6B] font-medium">
+                      {" "}
+                      <FaLocationDot className="text-2xl" /> England
+                    </p>
+                    <img src={circle} alt="circle" className="rounded-3xl" />
+                  </div>
+                </div>
+                <img src={four} alt="image" className="rounded-3xl" />
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full text-right pt-3 pb-3 pr-5 bg-[#F5F5F5] rounded-b-3xl">
                   <p className="font-normal text-[#0D99FF] font-medium">
                     Progress
@@ -118,51 +165,7 @@ const Imageslider = () => {
                     <img src={circle} alt="circle" className="rounded-3xl" />
                   </div>
                 </div>
-                <img src={one} alt="image" className="rounded-3xl" />
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full text-right pt-3 pb-3 pr-5 bg-[#F5F5F5] rounded-b-3xl">
-                  <p className="font-normal text-[#0D99FF] font-medium">
-                    Progress
-                  </p>
-                  <a href="#">
-                    <h5 className="font-extrabold text-2xl text-[#003F6B]">
-                      Interior Works
-                    </h5>
-                  </a>
-                </div>
-              </div>
-              <div className="bg-white border-[1px] border-gray-200 rounded-3xl relative mr-6">
-                <div className="inner_location">
-                  <div className="location absolute flex items-center justify-between w-full pl-4 pr-4 top-4">
-                    <p className="flex items-center justify-center gap-2 text-[#003F6B] font-medium">
-                      {" "}
-                      <FaLocationDot className="text-2xl" /> England
-                    </p>
-                    <img src={circle} alt="circle" className="rounded-3xl" />
-                  </div>
-                </div>
-                <img src={one} alt="image" className="rounded-3xl" />
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full text-right pt-3 pb-3 pr-5 bg-[#F5F5F5] rounded-b-3xl">
-                  <p className="font-normal text-[#0D99FF] font-medium">
-                    Progress
-                  </p>
-                  <a href="#">
-                    <h5 className="font-extrabold text-2xl text-[#003F6B]">
-                      Interior Works
-                    </h5>
-                  </a>
-                </div>
-              </div>
-              <div className="bg-white border-[1px] border-gray-200 rounded-3xl relative mr-6">
-                <div className="inner_location">
-                  <div className="location absolute flex items-center justify-between w-full pl-4 pr-4 top-4">
-                    <p className="flex items-center justify-center gap-2 text-[#003F6B] font-medium">
-                      {" "}
-                      <FaLocationDot className="text-2xl" /> England
-                    </p>
-                    <img src={circle} alt="circle" className="rounded-3xl" />
-                  </div>
-                </div>
-                <img src={one} alt="image" className="rounded-3xl" />
+                <img src={two} alt="image" className="rounded-3xl" />
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full text-right pt-3 pb-3 pr-5 bg-[#F5F5F5] rounded-b-3xl">
                   <p className="font-normal text-[#0D99FF] font-medium">
                     Progress
