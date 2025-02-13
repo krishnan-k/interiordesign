@@ -31,7 +31,7 @@ const ProjectList = () => {
                   name="email"
                   type="text"
                   placeholder="Search any"
-                  className="block px-3.5 py-3.5 text-base font-medium text-[#003F6B] placeholder:text-gray-400"
+                  className="w-full block px-3.5 py-3.5 text-base font-medium text-[#003F6B] placeholder:text-gray-400 focus:outline-sky-500"
                 />
                 <IoSearch className="absolute right-3 top-4 text-2xl text-gray-400 font-semibold" />
               </div>
