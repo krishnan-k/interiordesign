@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo1.jpg";
 import cart from "../assets/cart.svg";
 import { Link } from "react-router";
 import { IoClose } from "react-icons/io5";
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="header_section max-w-[1600px] m-auto flex items-center justify-between pt-5 pb-5 md_screen">
         <div className="header-logo">
           <Link to="/">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" style={{width: "280px", height: "80px", objectFit: "contain"}}/>
           </Link>
         </div>
         <div className="login_details flex items-center justify-between gap-5">
@@ -74,7 +74,7 @@ const Navbar = () => {
         <div className="navigation_section max-w-[1600px] m-auto flex items-center justify-between">
           <div className="heading flex items-center justify-between">
             <h2 className="uppercase text-xl font-black text-[#003F6B]">
-              www.myproject.ai
+              myproject
             </h2>
             <button className="drawer-toggle" onClick={toggleDrawer}>
               <BiMenu />
